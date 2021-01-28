@@ -3,7 +3,8 @@
     "description": "For logging",
     "type": "package",
     "require": {
-        "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0"
+        "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
+      "ext-mbstring": "*"
     },
     "autoload": {
         "psr-4": {
