@@ -1,20 +1,21 @@
 # Logs
 
-## Installing
-
-- The minimum required PHP version is PHP 7.4.
-
-```composer
-$ composer i
-```
-or
-
-```composer
-$ composer u
-```
-
-## Using
+## Create log entry in file
 
 ```php
-new CurrencyCSVDirector('USD');
+use Logs\LogFile;
+$log = (new LogFile);
+$log->setDirectory($directory)->setFilename($filename);
+$log->setMessage($message);
+$log->write();
+```
+
+## Create log entry in Telegram
+
+```php
+use Logs\LogTelegram;
+$log = (new LogTelegram);
+$log->setBotId($botId)->setToken($token)->setChatId($chatId);
+$log->setMessage($message);
+$log->write();
 ```
