@@ -7,6 +7,11 @@
 ```composer
 composer i
 ```
+or
+
+```composer
+composer u
+```
 
 ## Using
 
