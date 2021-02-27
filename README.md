@@ -5,12 +5,12 @@
 - The minimum required PHP version is PHP 7.4.
 
 ```composer
-composer i
+$ composer i
 ```
 or
 
 ```composer
-composer u
+$ composer u
 ```
 
 ## Using
